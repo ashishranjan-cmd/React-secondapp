@@ -19,6 +19,10 @@ let mys= { color : 'Red' } // attribute
 
 let mypic = "https://picsum.photos/200";
 
+function Myheader(){
+  return "This is jsx component."
+}
+// Myheader() // this is how we normally call a function.
 
 ReactDOM.render(
 <div>
@@ -29,5 +33,6 @@ ReactDOM.render(
   <p>this is {myname} {fn()}</p>
   <p>this is default variable :- {def1}</p>
   <p>This is {myf.default} & {myf.fn()}</p>
+  <Myheader> our function  become a tag</Myheader>
 </div>
 , document.getElementById("root"))
