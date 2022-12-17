@@ -1,9 +1,11 @@
-var React = require("react")
-var ReactDOM = require("react-dom")
+// var React = require("react")
+// var ReactDOM = require("react-dom")
 
-// import './index.css'; // path to css file
+import React from 'react';
+import ReactDOM from 'react-dom';
+import myname, {fn, fn2} from './my.js'; // importing variable from other file
+import './index.css'; // path to css file
 
-import myname from './my.js'; // importing variable from other file
 
 let fnm = "Tom";
 let lnm = "Jerry";
@@ -22,6 +24,6 @@ ReactDOM.render(
   <p className='myc'> Testing the web</p>
   <p style={mys}>Current year is : {year}</p>
   <img src={ mypic + "?grayscale" } />
-  <p>this is {myname} </p>
+  <p>this is {myname} {fn()}</p>
 </div>
 , document.getElementById("root"))
